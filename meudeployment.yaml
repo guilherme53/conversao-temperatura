@@ -13,7 +13,7 @@ spec:
         app: web
     spec:
       containers:
-        - name: web
+        - name: webtemp
           image: guilherme53/conversao-temperatura:v1
           ports:
             - containerPort: 8080
@@ -30,4 +30,4 @@ spec:
       protocol: TCP
       name: http
       nodePort: 30000
-  type: NodePort 
+  type: LoadBalancer 
